@@ -15,7 +15,7 @@
 
 # Add a feed source
 sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=5.15/g' ./target/linux/x86/Makefile
-git checkout 4a7dd142ff31c121772d3c174045488b69d6a27e
+# git checkout 4a7dd142ff31c121772d3c174045488b69d6a27e
 sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
 sed -i '$a src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 # sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
